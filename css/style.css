@@ -36,10 +36,32 @@ header h1 {
     padding-bottom: 114px;
 }
 
+.banner-button {
+    width: 168px;
+    background: #e02c6d;
+    color: #ffffff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    margin: auto auto;
+}
+
+.button-link {
+    margin: 16px;
+    text-decoration: none;
+}
+
+.banner-button span {
+    margin-left: 8px;
+}
+
 .header-title {
     width: 485px;
     height: 230px;
     margin-right: 51px;
+    text-align: center;
 }
 
 .header-title h1 {
@@ -50,6 +72,12 @@ header h1 {
     text-align: center;
 }
 
+.header-title input {
+    margin-top: 27px;
+    padding: 10px 24px;
+    text-align: center;
+}
+
 .header-banner {
     margin-left: 51px;
 }
@@ -57,6 +85,30 @@ header h1 {
 .header-banner img {
     width: 556px;
     height: 438px;
+}
+
+
+/*------------------ Animation -----------------*/
+
+@keyframes color-rush {
+    0% {
+        background-color: #e66465;
+        color: blue;
+        transition: all 0s ease-in-out;
+        transform: scale(1);
+    }
+    100% {
+        transition: all 0.1s ease-in-out;
+        transform: scale(1.2);
+        color: indigo;
+        background-color: #9198e5;
+        background-position: 20vw;
+    }
+}
+
+.banner-button:hover {
+    background-image: linear-gradient( to right, #9198e5, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%, #e66465);
+    animation: color-rush 5.5s ease-out alternate infinite;
 }
 
 
@@ -133,3 +185,55 @@ header h1 {
 
 
 /*--------------- END OF Player SECTION --------------*/
+
+
+/*================== Footer =================*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 213px;
+    margin-top: 165px;
+    margin-bottom: 63px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-links {
+    color: #6c6c6c;
+    margin: 20px 0;
+}
+
+.link-list {
+    margin: 0;
+}
+
+.link-list a {
+    background: rgb(199, 199, 199);
+    height: 32px;
+    width: 32px;
+    border-radius: 90%;
+    margin-right: 14px;
+}
+
+.copyright-text {
+    margin: 0;
+}
+
+.social-links a i {
+    text-align: center;
+    color: #887e96;
+    height: 32px;
+    width: 32px;
+}
