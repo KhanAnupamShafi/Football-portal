@@ -58,3 +58,78 @@ header h1 {
     width: 556px;
     height: 438px;
 }
+
+
+/*--------------- END OF Header --------------*/
+
+
+/**============================================
+ *           SECTION players starts
+ *=============================================**/
+
+.main-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    width: 1050px;
+}
+
+.player-content {
+    margin-right: 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    padding-bottom: 33px;
+}
+
+
+/* .player-box {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 426px; 
+}
+
+.player-image {
+     height: 256px; 
+} */
+
+.player-image img {
+    height: 256px;
+    width: 300px;
+}
+
+.player-info {
+    /* height: 154px; */
+}
+
+.player-info h2 {
+    color: #18191f;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.player-info p {
+    color: #6c6c6c;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+/*--------------- END OF Player SECTION --------------*/
