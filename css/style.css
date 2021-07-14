@@ -437,7 +437,7 @@ footer p {
     .header-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 180px;
+        row-gap: 3000px;
     }
     .header-title {
         margin: auto;
@@ -485,7 +485,7 @@ footer p {
     .header-container {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 150px;
+        row-gap: 300px;
     }
     .header-title {
         margin: auto;
